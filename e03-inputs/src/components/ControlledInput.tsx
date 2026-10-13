@@ -1,16 +1,17 @@
 import { type FC, useState, useId } from "react";
 
 type ControlledInputProps = {
+  label: string;
   defaultValue: string;
   onChange: (value: string) => void;
 };
 
-const ControlledInput:FC<ControlledInputProps> = ({ defaultValue, onChange }) => {
+const ControlledInput:FC<ControlledInputProps> = ({ defaultValue, label, onChange }) => {
   const [value, setValue] = useState(defaultValue);
   const id = useId(); 
     return (
     <div>
-      <label htmlFor={id}>Controlled Input</label>
+      <label htmlFor={id}>{label}</label>
       <input 
         id={id} 
         className="x" 
@@ -20,6 +21,7 @@ const ControlledInput:FC<ControlledInputProps> = ({ defaultValue, onChange }) =>
         value={value} 
         onChange={(e) => {
           setValue(e.target.value);
+          onChange(e.target.value);
         }} 
       />
     </div>

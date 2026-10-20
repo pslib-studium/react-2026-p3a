@@ -5,7 +5,25 @@ const KeyReader: React.FC = () => {
     const [secondKey, setSecondKey] = useState<string | null>(null);
     useEffect(
         () => {console.log("effect");},
-        [lastKey] // pole závislostí, efekt se spustí při změně lastKey
+        [lastKey] // pole závislostí, efekt se spustí při změně lastKey nebo prvním renderu
+    );
+    useEffect(
+        () => {console.log("afterRender");},
+        [] // pole závislostí, efekt se spustí pouze po prvním renderu
+    );
+    useEffect(
+        () => {
+            const handleKeyDown = (e: KeyboardEvent) => {
+                console.log("key pressed:", e.key, lastKey, secondKey);
+                setSecondKey(lastKey);
+            };
+            window.addEventListener("keydown", handleKeyDown);
+            return () => {
+                console.log("cleanup");
+                window.removeEventListener("keydown", handleKeyDown);
+            };
+        },
+        [] // připojeno pouze při prvním renderu, efekt se nebude spouštět při dalších změnách  
     );
     console.log("component rendered");
     return (

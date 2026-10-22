@@ -1,0 +1,3326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+  <question type="category">
+    <category><text>$course$/top/React p3a/K1 Syntaxe JavaScriptu a TypeScriptu</text></category>
+    <info format="html"><text></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T02-01 Import výchozího exportu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Soubor <code>Number.tsx</code> končí řádkem <code>export default Number;</code>. Který import v <code>App.tsx</code> je správný?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T02-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>import Number from './Number';</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>import { Number } from './Number';</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>import * from './Number';</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>import default Number from './Number';</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T02-02 Jméno při importu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>V <code>main.tsx</code> je <code>import Application from './App.tsx'</code>, přitom <code>App.tsx</code> obsahuje <code>export default App</code>. Co platí?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T02-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Funguje – u výchozího exportu si jméno volí importující soubor.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Chyba – jméno v importu musí odpovídat názvu exportované funkce.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Funguje jen díky tomu, že <code>App.tsx</code> obsahuje i <code>export function App</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Chyba – v cestě importu nesmí být uvedena přípona <code>.tsx</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T02-03 Alias při importu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Soubor začíná řádkem <code>import { createRoot as cr } from 'react-dom/client'</code>. Které volání je v tomto souboru platné?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T02-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>cr(document.getElementById('root')!)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>createRoot(document.getElementById('root')!)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>createRoot.cr(document.getElementById('root')!)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Obě volání <code>cr(…)</code> i <code>createRoot(…)</code> – alias jen přidává další jméno.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T02-04 Platné importy]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Soubor <code>App.tsx</code> obsahuje současně <code>export function App() { … }</code> i <code>export default App</code>. Které importy jsou platné?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T02-04</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>import App from './App'</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>import { App } from './App'</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>import Whatever from './App'</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>import { Whatever } from './App'</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>import App, from './App'</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T02-05 Co zmizí při překladu do JS]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Které části kódu budou po překladu TypeScriptu do JavaScriptu zcela odstraněny?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T02-05</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>import type { FC } from 'react';</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>type NumberProps = { value1?: number; value2?: number };</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[typová anotace <code>: FC&lt;NumberProps&gt;</code> v deklaraci <code>const Number: FC&lt;NumberProps&gt; = …</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>import './App.css';</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>const [a, setA] = useState&lt;number&gt;(6);</code> (celý řádek)]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="gapselect">
+    <name><text><![CDATA[T02-06 Doplňte importy]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Doplňte importy tak, aby odpovídaly komentářům a následnému použití v kódu.</p>
+<pre><code>import [[1]] from './components/Triangle';  // soubor končí: export default TriangleFromSides
+import [[2]] from 'react';                   // potřebujeme hook useState a typ FC
+import [[3]] from 'react-dom/client';        // funkci createRoot chceme volat jako cr(…)
+import [[4]];                                // jen načíst styly
+
+// … dále v kódu: &lt;Triangle a={a} … /&gt;   cr(root).render(…)</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T02-06</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <selectoption>
+      <text><![CDATA[Triangle]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[{ useState, type FC }]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[{ createRoot as cr }]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA['./App.css']]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[{ Triangle }]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[{ useState, FC as type }]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[{ cr as createRoot }]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[App.css]]></text>
+      <group>1</group>
+    </selectoption>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T07-01 Pořadí při destrukturalizaci pole]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co bude v proměnných po zápisu <code>const [setA, a] = useState(6);</code> (jména jsou záměrně prohozena)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T07-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>setA</code> bude číslo <code>6</code> a <code>a</code> bude funkce pro změnu stavu – rozhoduje pořadí, ne jméno.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>a</code> bude <code>6</code> a <code>setA</code> funkce – React proměnné přiřadí podle jména.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeScript ohlásí chybu, protože setter musí začínat na <code>set</code> a být druhý.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Obě proměnné budou <code>undefined</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T07-02 Ekvivalentní zápis parametru]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Který zápis je ekvivalentní s <code>const Number = ({ value1, value2 }) =&gt; { … }</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T07-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>const Number = (props) =&gt; { const { value1, value2 } = props; … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>const Number = (value1, value2) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>const Number = ([value1, value2]) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>const Number = (props) =&gt; { const value1 = props[0]; const value2 = props[1]; … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T07-03 Template literal]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jaký řetězec vznikne pro <code>const A = { x: 95, y: 95 };</code> z výrazu <code>`${A.x},${A.y}`</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T07-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>95,95</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>${A.x},${A.y}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>A.x,A.y</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>190</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T07-04 Tělo šipkové funkce]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co vrátí <code>f(3)</code> pro <code>const f = (x: number) =&gt; { x * 2 };</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T07-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>undefined</code> – tělo ve složených závorkách bez <code>return</code> nic nevrací.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>6</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>NaN</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vznikne chyba za běhu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T07-05 const a objekt]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Je možné provést <code>A.x = 5;</code> po deklaraci <code>const A = { x: 0, y: 0 };</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T07-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Ano – <code>const</code> zakazuje jen přiřazení nové hodnoty do proměnné <code>A</code>, ne změnu vlastností objektu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ne – objekt deklarovaný pomocí <code>const</code> je neměnný.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ne – TypeScript ohlásí chybu, protože <code>x</code> má typ <code>0</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ano, ale jen pokud je objekt deklarován uvnitř funkce.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="match">
+    <name><text><![CDATA[T07-06 Výsledky výrazů]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Přiřaďte k výrazu jeho výsledek (<code>x = 2</code>).</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T07-06</idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<code>`${x}px`</code>]]></text>
+      <answer><text><![CDATA[&quot;2px&quot;]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>x ** 3</code>]]></text>
+      <answer><text><![CDATA[8]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>Math.max(1, 5, 3)</code>]]></text>
+      <answer><text><![CDATA[5]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>parseInt(&quot;12abc&quot;)</code>]]></text>
+      <answer><text><![CDATA[12]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>(() =&gt; { const { p } = { p: 7, q: 1 }; return p; })()</code>]]></text>
+      <answer><text><![CDATA[7]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[NaN]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[undefined]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[6]]></text></answer>
+    </subquestion>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T09-01 Funkční typ]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co popisuje vlastnost typu <code>handleA: (value: number) =&gt; void;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>handleA</code> je funkce s jedním parametrem typu <code>number</code>, která nic nevrací.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>handleA</code> je funkce, která vrací <code>number</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>handleA</code> je buď <code>number</code>, nebo <code>void</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>handleA</code> je šipková funkce s výchozí hodnotou parametru <code>void</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T09-02 Důsledek !]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Vstupní soubor aplikace obsahuje <code>createRoot(document.getElementById('root')!)</code>. Co se stane, když v <code>index.html</code> prvek <code>id=&quot;root&quot;</code> chybí?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[TypeScript kód přeloží bez chyby, ale za běhu <code>createRoot</code> dostane <code>null</code> a vyhodí chybu – <code>!</code> jen potlačí typovou kontrolu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeScript ohlásí chybu při překladu, protože prvek v HTML neexistuje.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>!</code> zajistí, že React prvek <code>#root</code> automaticky vytvoří.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aplikace se vykreslí do <code>&lt;body&gt;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T09-03 Optional chaining]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co se stane při vyhodnocení <code>inputRef.current?.value</code>, když <code>inputRef.current</code> je <code>null</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Výraz vrátí <code>undefined</code> a nevznikne chyba.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vznikne <code>TypeError: Cannot read properties of null</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Výraz vrátí prázdný řetězec <code>&quot;&quot;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Výraz vrátí <code>null</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T09-04 Volitelný callback]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Typ props obsahuje <code>onChange?: (value: string | undefined) =&gt; void;</code>. Která volání projdou typovou kontrolou (strict režim)?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-04</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>onChange?.(&quot;abc&quot;)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>onChange?.(undefined)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>onChange?.(42)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>onChange(&quot;abc&quot;)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="gapselect">
+    <name><text><![CDATA[T09-05 Doplňte operátory]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Doplňte znaky tak, aby kód odpovídal komentářům a prošel typovou kontrolou.</p>
+<pre><code>type Props = {
+  label[[1]] string;                                 // povinný
+  defaultValue[[2]] string;                          // nepovinný
+  onChange?: (value: string | undefined) [[3]] void; // callback nic nevrací
+};
+
+const root = document.getElementById('root')[[4]];  // víme jistě, že prvek existuje
+onChange[[5]](inputRef.current?.value);             // onChange nemusí být předán</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-05</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <selectoption>
+      <text><![CDATA[:]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[?:]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[=&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[!]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[?.]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[-&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[??]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[!:]]></text>
+      <group>1</group>
+    </selectoption>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T09-06 Hodnoty pro fillColor]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>Triangle</code> má prop <code>fillColor: React.SVGProps&lt;SVGPolygonElement&gt;[&quot;fill&quot;]</code>, což je typ atributu <code>fill</code> u <code>&lt;polygon&gt;</code> (<code>string | undefined</code>). Které použití projdou typovou kontrolou?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-06</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>&lt;Triangle … fillColor=&quot;orange&quot; /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>&lt;Triangle … fillColor={actualColor} /&gt;</code> (kde <code>actualColor: string</code>)]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>&lt;Triangle … fillColor=&quot;#808080&quot; /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>&lt;Triangle … fillColor={42} /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>&lt;Triangle … fillColor={{ color: &quot;red&quot; }} /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T09-07 Kontextové typování]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>ControlledInput</code> má props typu <code>{ label: string; onChange: (value: string) =&gt; void }</code>. Rodič ji použije jako <code>&lt;ControlledInput label=&quot;Jméno&quot; onChange={(value) =&gt; console.log(value)} /&gt;</code> a u parametru <code>value</code> není uveden typ. Jaký typ má <code>value</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T09-07</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>string</code> – TypeScript ho odvodí z typu prop <code>onChange: (value: string) =&gt; void</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>any</code> – parametr bez anotace má vždy typ <code>any</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>unknown</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>string | undefined</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T10-01 Kdy je generikum nutné]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Počáteční hodnota stavu je <code>null</code>, později se má volat <code>setName(&quot;Eva&quot;)</code>. Která deklarace to (ve strict režimu) umožní?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T10-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>const [name, setName] = useState&lt;string | null&gt;(null);</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>const [name, setName] = useState(null);</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>const [name, setName] = useState&lt;null&gt;(null);</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>const [name, setName] = useState&lt;string&gt;(null);</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T10-02 Odvození typu stavu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta má prop <code>defaultValue: string</code> a obsahuje <code>const [value, setValue] = useState(defaultValue);</code> (bez generika). Jaký typ má stav <code>value</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T10-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>string</code> – typ se odvodí z počáteční hodnoty.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>any</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>unknown</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>string | undefined</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T10-03 Generikum u useRef]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta obsahuje:</p>
+<pre><code>const inputRef = useRef&lt;HTMLInputElement&gt;(null);
+// …
+&lt;input ref={inputRef} /&gt;</code></pre>
+<p>Proč je u <code>useRef</code> uvedeno <code>&lt;HTMLInputElement&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T10-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Aby <code>inputRef.current</code> měl typ <code>HTMLInputElement | null</code> a šlo bezpečně číst např. <code>.value</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aby React vytvořil nový <code>&lt;input&gt;</code> prvek.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Generikum je povinné – bez něj <code>useRef</code> nelze zavolat.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aby <code>inputRef.current</code> nikdy nebyl <code>null</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T10-04 Typování komponenty]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Které zápisy správně typují komponentu <code>Inputs</code> s props typu <code>InputsProps</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T10-04</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>const Inputs: FC&lt;InputsProps&gt; = ({ a, b }) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>const Inputs: React.FC&lt;InputsProps&gt; = ({ a, b }) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>function Inputs({ a, b }: InputsProps) { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>const Inputs = FC&lt;InputsProps&gt;({ a, b }) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>const Inputs&lt;InputsProps&gt; = ({ a, b }) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T10-05 Špatný typ v setteru]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co se stane při <code>setA(&quot;7&quot;)</code>, je-li <code>const [a, setA] = useState&lt;number&gt;(6);</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T10-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[TypeScript ohlásí chybu – setter přijímá jen <code>number</code> (nebo funkci vracející <code>number</code>).]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Řetězec se automaticky převede na číslo <code>7</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Kód se přeloží, ale za běhu vznikne výjimka.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Stav bude <code>&quot;7&quot;</code> bez jakékoli chyby.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="gapselect">
+    <name><text><![CDATA[T10-06 Doplňte typové parametry]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Doplňte typové parametry tak, aby odpovídaly komentářům.</p>
+<pre><code>const [color, setColor] = useState[[1]](&quot;orange&quot;);     // stav je text
+const inputRef = useRef[[2]](null);                     // ref pro prvek &lt;input&gt;
+const Inputs: FC[[3]] = ({ a, b, c }) =&gt; { /* … */ };  // props popisuje typ InputsProps</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T10-06</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <selectoption>
+      <text><![CDATA[&lt;string&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[&lt;HTMLInputElement&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[&lt;InputsProps&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[&lt;number&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[&lt;HTMLElement[]&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[(string)]]></text>
+      <group>1</group>
+    </selectoption>
+  </question>
+  <question type="category">
+    <category><text>$course$/top/React p3a/K2 JSX</text></category>
+    <info format="html"><text></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T04-01 Fragment]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>function App() {
+  return (
+    &lt;&gt;
+      &lt;nav&gt;…&lt;/nav&gt;
+      &lt;main&gt;…&lt;/main&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<p>Proč je obsah komponenty <code>App</code> obalen do <code>&lt;&gt; … &lt;/&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T04-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Komponenta musí vracet jeden kořenový prvek; Fragment seskupí <code>&lt;nav&gt;</code> a <code>&lt;main&gt;</code>, aniž přidá prvek do DOM.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&lt;&gt;</code> je zkratka pro <code>&lt;div&gt;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Fragment zajistí, že se komponenta vykreslí jen jednou.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Je to povinné vždy, i když komponenta vrací jediný prvek.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T04-02 Neplatný návrat]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Který <code>return</code> v komponentě je neplatný?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T04-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>return &lt;h1&gt;A&lt;/h1&gt;&lt;p&gt;B&lt;/p&gt;;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>return &lt;&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;p&gt;B&lt;/p&gt;&lt;/&gt;;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>return &lt;div&gt;&lt;h1&gt;A&lt;/h1&gt;&lt;p&gt;B&lt;/p&gt;&lt;/div&gt;;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>return (&lt;p&gt;B&lt;/p&gt;);</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T04-03 Zápis komponenty bez potomků]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Které zápisy správně vykreslí komponentu <code>Application</code> bez potomků?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T04-03</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>&lt;Application&gt;&lt;/Application&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>&lt;Application /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>&lt;Application&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>&lt;application /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>{Application}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T04-04 Malé písmeno v názvu komponenty]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponentu přejmenujeme na <code>number</code> a použijeme ji jako <code>&lt;number value1={3} /&gt;</code>. Co se stane?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T04-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[JSX ji považuje za HTML prvek <code>&lt;number&gt;</code> – komponenta se nezavolá (TypeScript navíc hlásí neznámý prvek).]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic se nezmění, velikost písmen nehraje roli.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[React název automaticky převede na <code>Number</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vykreslí se číslo <code>3</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="gapselect">
+    <name><text><![CDATA[T04-05 Vložení výrazu do JSX]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Doplňte znaky tak, aby se v odstavci vypsala hodnota proměnné <code>value1</code>.</p>
+<pre><code>&lt;p className=&quot;number&quot;&gt;Číslo: [[1]]value1[[2]]&lt;/p&gt;</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T04-05</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <selectoption>
+      <text><![CDATA[{]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[}]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[${]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[{{]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[}}]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[(]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[)]]></text>
+      <group>1</group>
+    </selectoption>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T04-06 Komentáře v JSX]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co uvidí uživatel po vykreslení <code>&lt;p&gt;Text // poznámka {/* skryté */}&lt;/p&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T04-06</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>Text // poznámka</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Text</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Text // poznámka /* skryté */</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic, kód nelze přeložit.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="ddwtos">
+    <name><text><![CDATA[T05-01 Převeďte HTML do JSX]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Přetáhněte do mezer výrazy tak, aby JSX odpovídalo HTML kódu <code>&lt;label for=&quot;a&quot; class=&quot;lbl&quot; style=&quot;font-weight: bold; margin-top: 4px&quot;&gt;A&lt;/label&gt;</code>.</p>
+<pre><code>&lt;label [[1]]=&quot;a&quot; [[2]]=&quot;lbl&quot; style=[[3]]&gt;A&lt;/label&gt;</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T05-01</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <dragbox>
+      <text><![CDATA[htmlFor]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[className]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[{{ fontWeight: &quot;bold&quot;, marginTop: 4 }}]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[for]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[class]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[&quot;font-weight: bold; margin-top: 4px&quot;]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[{ fontWeight: &quot;bold&quot;, marginTop: 4 }]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[{{ font-weight: &quot;bold&quot;, margin-top: 4 }}]]></text>
+      <group>1</group>
+    </dragbox>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T05-02 Dvojité složené závorky]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Proč jsou ve <code>style={{ color: 'red', fontWeight: 'bold' }}</code> dvojité složené závorky?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T05-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Vnější závorky vkládají JS výraz do JSX, vnitřní tvoří objektový literál se styly.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Je to speciální syntaxe Reactu pro zápis CSS.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vnitřní závorky escapují vnější.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Jde o šablonový řetězec.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T05-03 Typ hodnoty prop]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jaký typ hodnoty dostane <code>value1</code> v <code>&lt;Number value1={3} /&gt;</code> a jaký v <code>&lt;Number value1=&quot;3&quot; /&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T05-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>number</code>, resp. <code>string</code> (druhý zápis TypeScript pro <code>value1?: number</code> odmítne).]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[V obou případech <code>number</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[V obou případech <code>string</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>string</code>, resp. <code>number</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T05-04 Výraz v prop]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>Number</code> je definována takto:</p>
+<pre><code>const Number: FC&lt;NumberProps&gt; = ({ value1, value2 }) =&gt; (
+  &lt;p&gt;Číslo: {value1}{value2 ? &quot;+&quot; : null}{value2}&lt;/p&gt;
+);</code></pre>
+<p>Co vykreslí <code>&lt;Number value1={3 + 6} /&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T05-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>Číslo: 9</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 3 + 6</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 36</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 9+</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T05-05 Template literal v atributu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jakou hodnotu dostane atribut <code>viewBox={`${minX} ${minY} ${maxX-minX} ${maxY-minY}`}</code> pro <code>minX = 0</code>, <code>minY = 0</code>, <code>maxX = 6</code>, <code>maxY = 3.5</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T05-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>&quot;0 0 6 3.5&quot;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&quot;${minX} ${minY} ${maxX-minX} ${maxY-minY}&quot;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&quot;006 3.5&quot;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[pole <code>[0, 0, 6, 3.5]</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T05-06 Číselná hodnota ve style]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jakou šířku bude mít prvek <code>&lt;div style={{ width: size }} /&gt;</code> pro <code>size = 100</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T05-06</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>100px</code> – React u číselných hodnot rozměrů doplní jednotku <code>px</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>100%</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Žádnou – bez jednotky je hodnota neplatná a ignoruje se.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>100em</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T06-01 null v JSX]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co se vykreslí za <code>{value2 ? &quot;+&quot; : null}</code>, když <code>value2</code> je <code>undefined</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T06-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Nic – <code>null</code> React nevykreslí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Text <code>null</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Znak <code>+</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vznikne chyba.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T06-02 Výstup komponenty Number]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>Number</code> je definována takto:</p>
+<pre><code>const Number: FC&lt;NumberProps&gt; = ({ value1, value2 }) =&gt; (
+  &lt;p&gt;Číslo: {value1}{value2 ? &quot;+&quot; : null}{value2}&lt;/p&gt;
+);</code></pre>
+<p>Co vykreslí <code>&lt;Number value1={3} value2={4} /&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T06-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>Číslo: 3+4</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 7</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 3 + 4</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 34</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T06-03 Nula jako podmínka]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co vykreslí <code>&lt;Number value1={3} value2={0} /&gt;</code>? (JSX: <code>Číslo: {value1}{value2 ? &quot;+&quot; : null}{value2}</code>)</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T06-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>Číslo: 30</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 3+0</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 3</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Číslo: 3+</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T06-04 Předčasný return]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const isConstructible = (a: number, b: number, c: number) =&gt;
+  a + b &gt; c &amp;&amp; a + c &gt; b &amp;&amp; b + c &gt; a;
+
+if (!isConstructible(a, b, c)) {
+  return &lt;svg&gt;…&lt;polygon fill=&quot;red&quot; … /&gt;&lt;text&gt;TNC&lt;/text&gt;&lt;/svg&gt;;
+}
+// výpočet souřadnic
+return &lt;svg&gt;…&lt;polygon fill={fillColor} … /&gt;&lt;/svg&gt;;</code></pre>
+<p>Co vykreslí komponenta s tímto kódem pro <code>a = 1</code>, <code>b = 2</code>, <code>c = 10</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T06-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[SVG s červeným polygonem a textem „TNC“; zbytek funkce se neprovede.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Výchozí trojúhelník i vypočítaný trojúhelník.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vznikne chyba, protože komponenta má dva <code>return</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T06-05 Podmíněné zobrazení prvku]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Které zápisy uvnitř JSX vykreslí <code>&lt;b&gt;Ano&lt;/b&gt;</code> jen pokud <code>ok === true</code> (jinak nic)? <code>ok</code> je typu <code>boolean</code>.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T06-05</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>{ok ? &lt;b&gt;Ano&lt;/b&gt; : null}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>{ok &amp;&amp; &lt;b&gt;Ano&lt;/b&gt;}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>{if (ok) &lt;b&gt;Ano&lt;/b&gt;}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>{ok ? &lt;b&gt;Ano&lt;/b&gt;}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>{ok || &lt;b&gt;Ano&lt;/b&gt;}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="gapselect">
+    <name><text><![CDATA[T06-06 Podmínka ve stylu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Barva pozadí má být zelená, pokud text obsahuje více než 5 znaků, jinak červená.</p>
+<pre><code>style={{ backgroundColor: value.length [[1]] 5 [[2]] &quot;lightgreen&quot; [[3]] &quot;lightcoral&quot; }}</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T06-06</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <selectoption>
+      <text><![CDATA[&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[?]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[:]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[&amp;&amp;]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[||]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[=&gt;]]></text>
+      <group>1</group>
+    </selectoption>
+  </question>
+  <question type="category">
+    <category><text>$course$/top/React p3a/K3 Komponenty a props</text></category>
+    <info format="html"><text></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T11-01 Varianty definice komponenty]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Je dáno <code>import { type FC, type ReactNode } from 'react';</code> a <code>type NumberProps = { value1?: number; value2?: number };</code>. Které definice jsou platnou komponentou s props <code>value1</code> a <code>value2</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T11-01</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>const Number = ({ value1, value2 }: { value1?: number, value2?: number }) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>function Number({ value1, value2 }: NumberProps): ReactNode { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>const Number: FC&lt;NumberProps&gt; = ({ value1, value2 }) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>const Number: FC&lt;NumberProps&gt; = (value1, value2) =&gt; { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>function Number(value1: number, value2: number) { … }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T11-02 Nepředaný prop]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const Number: FC&lt;NumberProps&gt; = ({ value1, value2 }) =&gt; {
+  console.log(value1, value2);
+  return &lt;p&gt;Číslo: {value1}&lt;/p&gt;;
+};</code></pre>
+<p>Co se vypíše do konzole při vykreslení <code>&lt;Number value1={3} /&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T11-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>3 undefined</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>3 0</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>3 null</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>3</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T11-03 Výchozí hodnota prop]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co znamená <code>= 0</code> v parametru <code>({ a = 0, b = 0, c = 0, fillColor = &quot;#808080&quot; })</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T11-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Výchozí hodnota, která se použije, pokud prop není předán (je <code>undefined</code>).]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Prop se vždy přepíše na <code>0</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Porovnání, zda je prop roven <code>0</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Výchozí hodnota, která se použije i tehdy, když je předán <code>null</code> nebo <code>0</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T11-04 Volitelné props]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Pro <code>type NumberProps = { value1?: number; value2?: number }</code> – které použití způsobí chybu TypeScriptu?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T11-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>&lt;Number value1=&quot;3&quot; /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&lt;Number /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&lt;Number value1={3} /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&lt;Number value2={1} /&gt;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="ddwtos">
+    <name><text><![CDATA[T11-05 Sestavte komponentu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Přetáhněte do mezer tak, aby vznikl typ props s nepovinnou vlastností <code>value1</code>, komponenta typovaná pomocí <code>FC</code> a její výchozí export.</p>
+<pre><code>[[1]] NumberProps = {
+  value1[[2]] number;
+};
+
+const Number: [[3]]&lt;NumberProps&gt; = ([[4]]) =&gt; {
+  return &lt;p&gt;Číslo: {value1}&lt;/p&gt;;
+};
+
+[[5]] default Number;</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T11-05</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <dragbox>
+      <text><![CDATA[type]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[?:]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[FC]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[{ value1 }]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[export]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[interface]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[import]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[ReactNode]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[value1]]></text>
+      <group>1</group>
+    </dragbox>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T11-06 Návratová hodnota komponenty]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co smí funkční komponenta vrátit, aby se vykreslila bez chyby?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T11-06</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[JSX prvek]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>null</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[řetězec nebo číslo]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[obyčejný objekt, např. <code>{ text: &quot;Ahoj&quot; }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[funkci]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T12-01 Více instancí]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>Number</code> vrací <code>&lt;p&gt;Číslo: {value1}&lt;/p&gt;</code>. Rodič obsahuje:</p>
+<pre><code>&lt;main&gt;
+  &lt;Number value1={3} /&gt;
+  &lt;Number value1={3 + 6} /&gt;
+&lt;/main&gt;</code></pre>
+<p>Co platí?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T12-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Vzniknou dvě nezávislé instance s vlastními props; vykreslí se <code>Číslo: 3</code> a <code>Číslo: 9</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Druhé použití přepíše první, vykreslí se jen <code>Číslo: 9</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Komponentu lze na stránce použít jen jednou.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Obě instance sdílí props, vykreslí se dvakrát <code>Číslo: 9</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T12-02 Props jen pro čtení]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>Number</code> dostane od rodiče prop <code>value1</code> a uvnitř provede <code>value1 = 10;</code>. Změní se tím hodnota v rodiči?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T12-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Ne – props jsou pro potomka jen pro čtení; data může změnit jen jejich vlastník (rodič), např. přes stav a callback.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ano – props se předávají odkazem.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ano, ale jen při použití <code>FC</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ne, ale <code>Number</code> se automaticky znovu vykreslí s hodnotou 10.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T12-03 Informace od potomka k rodiči]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>App</code> (rodič) drží stav a vykresluje <code>&lt;Triangle … /&gt;</code> (potomek). <code>Triangle</code> má <code>App</code> oznámit, že uživatel klikl na trojúhelník. Jak to správně udělat?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T12-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>App</code> předá <code>Triangle</code> funkci v props (např. <code>onSelect</code>) a <code>Triangle</code> ji při kliknutí zavolá.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Triangle</code> přiřadí novou hodnotu do svého prop, <code>App</code> si ji přečte.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Triangle</code> zavolá <code>setA</code> z <code>App</code> přímo, i když jí nebyl předán.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nelze – potomek nemůže rodiči nic sdělit.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T12-04 Počet prvků v DOM]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>App</code> vrací <code>&lt;Inputs … /&gt;</code>, <code>&lt;div className=&quot;triangle&quot;&gt;&lt;Triangle … /&gt;&lt;/div&gt;</code> a znovu <code>&lt;Inputs … /&gt;</code>. Každá instance <code>Inputs</code> obsahuje 4 prvky <code>&lt;input&gt;</code>. Kolik prvků <code>&lt;input&gt;</code> bude na stránce?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T12-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[8]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[4]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[2]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[12]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="match">
+    <name><text><![CDATA[T12-05 Role komponent]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>function App() {
+  const [a, setA] = useState&lt;number&gt;(6);
+  return (
+    &lt;&gt;
+      &lt;Inputs a={a} handleA={setA} /&gt;
+      &lt;Triangle a={a} /&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<p>Přiřaďte každé komponentě její roli podle uvedeného kódu.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T12-05</idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<code>App</code>]]></text>
+      <answer><text><![CDATA[Drží stav a předává ho potomkům přes props]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>Inputs</code>]]></text>
+      <answer><text><![CDATA[Změnu hodnoty může oznámit voláním předané funkce]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>Triangle</code>]]></text>
+      <answer><text><![CDATA[Hodnotu jen čte z props, stav změnit nemůže]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[Mění stav přiřazením nové hodnoty do props]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[Načítá data ze serveru]]></text></answer>
+    </subquestion>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T14-01 Stav v potomkovi]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>function App() {
+  const [a, setA] = useState&lt;number&gt;(6);
+  return (
+    &lt;&gt;
+      &lt;Inputs a={a} handleA={setA} /&gt;
+      &lt;Triangle a={a} /&gt;
+      &lt;Inputs a={a} handleA={setA} /&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<p>Co by se stalo, kdyby <code>App</code> stav neměla a každá instance <code>Inputs</code> si držela <code>a</code> ve vlastním <code>useState</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T14-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Obě instance by měly nezávislé hodnoty a <code>Triangle</code> by se o změnách nedozvěděl.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic – React stav stejně pojmenovaných proměnných automaticky sdílí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeScript by ohlásil chybu, <code>useState</code> lze volat jen v <code>App</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Obě instance by sdílely stav, ale <code>Triangle</code> ne.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T14-02 Dvě instance Inputs]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>function App() {
+  const [a, setA] = useState&lt;number&gt;(6);
+  return (
+    &lt;&gt;
+      &lt;Inputs a={a} handleA={setA} /&gt;
+      &lt;Triangle a={a} /&gt;
+      &lt;Inputs a={a} handleA={setA} /&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+<p><code>Inputs</code> zobrazuje hodnotu <code>a</code> z props a při změně volá <code>handleA</code>. Uživatel změní hodnotu v horním <code>Inputs</code>. Co se stane?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T14-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Změní se hodnota v obou <code>Inputs</code> i trojúhelník – všechny čtou stejný stav z <code>App</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Změní se jen horní <code>Inputs</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Změní se horní <code>Inputs</code> a trojúhelník, dolní ne.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic, props nelze měnit.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T14-03 Průběh změny]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>// App
+const [a, setA] = useState&lt;number&gt;(6);
+const handleAChange = (value: number) =&gt; { setA(value); };
+// …
+&lt;Inputs a={a} handleA={handleAChange} /&gt;
+&lt;Triangle a={a} /&gt;</code></pre>
+<p>Které pořadí kroků odpovídá zavolání <code>handleA(7)</code> uvnitř <code>Inputs</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T14-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>Inputs</code> zavolá <code>handleA</code> → v <code>App</code> proběhne <code>setA(7)</code> → <code>App</code> se znovu vykreslí → <code>Inputs</code> i <code>Triangle</code> dostanou <code>a = 7</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>Inputs</code> změní svůj prop <code>a</code> na 7 → <code>App</code> si změnu přečte → <code>Triangle</code> se překreslí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>handleA</code> přímo překreslí <code>Triangle</code>, <code>App</code> se nevykresluje.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>setA(7)</code> změní <code>a</code> okamžitě, bez nového vykreslení.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="gapselect">
+    <name><text><![CDATA[T14-04 Propojení rodiče a potomka]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Doplňte kód tak, aby změna hodnoty v <code>&lt;input&gt;</code> uvnitř <code>Inputs</code> změnila stav <code>b</code> v <code>App</code>.</p>
+<pre><code>// App.tsx
+const [b, setB] = useState&lt;number&gt;(4);
+const handleBChange = (value: number) =&gt; { [[1]](value); };
+&lt;Inputs b={[[2]]} handleB={[[3]]} /* … */ /&gt;
+
+// Inputs.tsx
+&lt;input type=&quot;number&quot; value={b}
+  onChange={(e) =&gt; [[4]](parseInt(e.target.value))} /&gt;</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T14-04</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <selectoption>
+      <text><![CDATA[setB]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[b]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[handleBChange]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[handleB]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[handleBChange()]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[useState]]></text>
+      <group>1</group>
+    </selectoption>
+    <selectoption>
+      <text><![CDATA[setB(value)]]></text>
+      <group>1</group>
+    </selectoption>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T14-05 Typ callbacku]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>V <code>App</code> je:</p>
+<pre><code>const [actualColor, setActualColor] = useState&lt;string&gt;(&quot;orange&quot;);
+const [a, setA] = useState&lt;number&gt;(6);
+const handleColorChange = (color: string) =&gt; { setActualColor(color); };</code></pre>
+<p>Prop <code>handleCC</code> komponenty <code>Inputs</code> má typ <code>(color: string) =&gt; void</code>. Co je správné předat do <code>&lt;Inputs handleCC={…} /&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T14-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>handleColorChange</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>handleColorChange(&quot;red&quot;)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>actualColor</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>setA</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T14-06 Kdy se volá callback]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta <code>ControlledInput</code> obsahuje:</p>
+<pre><code>&lt;input
+  value={value}
+  onChange={(e) =&gt; {
+    setValue(e.target.value);
+    onChange(e.target.value);
+  }}
+/&gt;</code></pre>
+<p>Rodič ji použije jako <code>&lt;ControlledInput onChange={(value) =&gt; console.log(value)} … /&gt;</code>. Kdy se hodnota vypíše do konzole?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T14-06</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Při každé změně textu v poli – <code>ControlledInput</code> volá <code>onChange(e.target.value)</code> ve svém handleru.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Jen jednou při prvním vykreslení.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Až po kliknutí na tlačítko.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nikdy – <code>onChange</code> z props se nepoužívá.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="category">
+    <category><text>$course$/top/React p3a/K4 Stav, hooky a formuláře</text></category>
+    <info format="html"><text></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T13-01 Bez destrukturalizace]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta obsahuje <code>const state = useState(6);</code>. Jak přečíst hodnotu a jak ji změnit na 7?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T13-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>state[0]</code>, <code>state[1](7)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>state.value</code>, <code>state.setValue(7)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>state</code>, <code>state = 7</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>state()</code>, <code>state(7)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T13-02 Stav vs proměnná]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Proč v komponentě nestačí <code>let a = 6;</code> a v handleru <code>a = 7;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T13-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Změna obyčejné proměnné nevyvolá nové vykreslení a při dalším vykreslení se <code>a</code> opět nastaví na 6.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Proměnné deklarované pomocí <code>let</code> nejsou v JSX dostupné.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeScript zakazuje měnit proměnné uvnitř komponenty.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Stačí – React změnu proměnné sám zachytí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T13-03 Počáteční hodnota]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta obsahuje <code>const [value, setValue] = useState(defaultValue);</code>, kde <code>defaultValue</code> je prop. Rodič později předá jiné <code>defaultValue</code>. Co se stane se stavem <code>value</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T13-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Nic – počáteční hodnota se použije jen při prvním vykreslení komponenty.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Stav se automaticky nastaví na nové <code>defaultValue</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Komponenta vyhodí chybu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Stav se vynuluje na <code>&quot;&quot;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T13-04 Změna stavu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jak správně změnit stav <code>a</code> z <code>const [a, setA] = useState(6);</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T13-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>setA(7)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>a = 7</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>useState(7)</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>setA = 7</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T13-05 Vlastnosti setteru]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co platí o funkci <code>setA</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T13-05</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Naplánuje nové vykreslení komponenty.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[Nová hodnota je v <code>a</code> k dispozici až při dalším vykreslení.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[Okamžitě změní proměnnou <code>a</code> v právě běžící funkci.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[Lze ji volat jen přímo v JSX.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[Vrací novou hodnotu stavu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="ddwtos">
+    <name><text><![CDATA[T13-06 Sestavte čítač]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Přetáhněte do mezer tak, aby vznikla komponenta s číselným stavem <code>count</code>, který se kliknutím zvyšuje.</p>
+<pre><code>import { [[1]] } from &quot;react&quot;;
+
+function Counter() {
+  const [count, [[2]]] = useState&lt;[[3]]&gt;(0);
+  return &lt;button onClick={() =&gt; setCount(count + 1)}&gt;{count}&lt;/button&gt;;
+}</code></pre>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T13-06</idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <dragbox>
+      <text><![CDATA[useState]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[setCount]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[number]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[useRef]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[string]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[count]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[setState]]></text>
+      <group>1</group>
+    </dragbox>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T15-01 Typ e.target.value]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jaký typ má <code>e.target.value</code> u <code>&lt;input type=&quot;number&quot;&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T15-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>string</code> – pro výpočty je nutné ho převést, např. pomocí <code>parseInt</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>number</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>number | undefined</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>any</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T15-02 Prázdné pole]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co vrátí <code>parseInt(e.target.value)</code>, když uživatel pole vymaže?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T15-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>NaN</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>0</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>&quot;&quot;</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>undefined</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T15-03 Reference vs volání]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Jaký je rozdíl mezi <code>onClick={handleClick}</code> a <code>onClick={handleClick()}</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T15-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[První předá funkci, kterou React zavolá při kliknutí; druhý ji zavolá hned při vykreslení a předá její výsledek.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Žádný, oba zápisy jsou ekvivalentní.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[První se zavolá při vykreslení, druhý při kliknutí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Druhý zápis předá funkci i s objektem události.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T15-04 Správný handler]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Které zápisy správně zavolají <code>handleA: (value: number) =&gt; void</code> s číselnou hodnotou při změně pole?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T15-04</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>onChange={(e) =&gt; handleA(parseInt(e.target.value))}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<code>onChange={(e) =&gt; handleA(e.target.valueAsNumber)}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>onChange={handleA(parseInt(e.target.value))}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>onChange={(e) =&gt; handleA(e.target.value)}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-33.33333" format="html">
+      <text><![CDATA[<code>onchange={(e) =&gt; handleA(parseInt(e.target.value))}</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T15-05 type="button"]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Tlačítko je zapsáno jako <code>&lt;button type=&quot;button&quot; onClick={…}&gt;Click me&lt;/button&gt;</code>. K čemu slouží <code>type=&quot;button&quot;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T15-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Uvnitř formuláře by výchozí typ <code>submit</code> formulář odeslal (a obnovil stránku).]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Bez něj by nefungoval <code>onClick</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Je to povinný atribut každého <code>&lt;button&gt;</code> v JSX.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aby se tlačítko vykreslilo jako odkaz.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="match">
+    <name><text><![CDATA[T15-06 Hodnoty z události]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Uživatel napsal do <code>&lt;input type=&quot;number&quot;&gt;</code> hodnotu <code>12</code>. Přiřaďte výraz v handleru <code>onChange={(e) =&gt; …}</code> k jeho výsledku.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T15-06</idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<code>e.target.value</code>]]></text>
+      <answer><text><![CDATA[&quot;12&quot;]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>parseInt(e.target.value)</code>]]></text>
+      <answer><text><![CDATA[12]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>e.target.value + 1</code>]]></text>
+      <answer><text><![CDATA[&quot;121&quot;]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>parseInt(e.target.value) + 1</code>]]></text>
+      <answer><text><![CDATA[13]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>e.target.value.length</code>]]></text>
+      <answer><text><![CDATA[2]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[NaN]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[3]]></text></answer>
+    </subquestion>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T16-01 Úprava hodnoty v řízeném inputu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Pole má <code>value={name}</code> a <code>onChange={(e) =&gt; setName(e.target.value.toUpperCase())}</code>. Uživatel píše <code>ahoj</code>. Co uvidí v poli?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T16-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>AHOJ</code> – v poli je vždy hodnota stavu, která se ukládá velkými písmeny.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>ahoj</code> – pole zobrazuje to, co uživatel napsal.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>ahoj</code>, velká písmena se projeví až po opuštění pole.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Pole zůstane prázdné.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T16-02 Neřízený input po úpravě]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const inputRef = useRef&lt;HTMLInputElement&gt;(null);
+// …
+&lt;input defaultValue={defaultValue} ref={inputRef} /&gt;</code></pre>
+<p>Komponenta dostala prop <code>defaultValue=&quot;Hello&quot;</code>. Uživatel přepíše text v poli na <code>Ahoj</code>. Jaké hodnoty mají prop <code>defaultValue</code> a <code>inputRef.current?.value</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T16-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>defaultValue</code> je stále <code>&quot;Hello&quot;</code>, <code>inputRef.current?.value</code> je <code>&quot;Ahoj&quot;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Oba jsou <code>&quot;Ahoj&quot;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Oba jsou <code>&quot;Hello&quot;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>defaultValue</code> je <code>&quot;Ahoj&quot;</code>, <code>inputRef.current?.value</code> je <code>&quot;Hello&quot;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="match">
+    <name><text><![CDATA[T16-03 Řízený nebo neřízený?]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Určete, zda popsaný formulářový prvek je řízený, nebo neřízený.</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T16-03</idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<code>value={value}</code> + <code>onChange</code> se setterem]]></text>
+      <answer><text><![CDATA[řízený]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<code>defaultValue=&quot;Hello&quot;</code> + <code>ref={inputRef}</code>]]></text>
+      <answer><text><![CDATA[neřízený]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[Hodnota se čte až po kliknutí přes <code>inputRef.current.value</code>]]></text>
+      <answer><text><![CDATA[neřízený]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[Barva pozadí se mění okamžitě podle délky textu]]></text>
+      <answer><text><![CDATA[řízený]]></text></answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer><text><![CDATA[nelze určit]]></text></answer>
+    </subquestion>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T16-04 value bez onChange]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co se stane s <code>&lt;input value={a} /&gt;</code> bez <code>onChange</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T16-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Pole bude jen pro čtení – uživatel hodnotu nezmění a React vypíše varování.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Pole bude fungovat jako neřízené.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Hodnota <code>a</code> se bude měnit podle psaní.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Pole se nevykreslí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T16-05 value i defaultValue]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const [value, setValue] = useState(defaultValue);
+// …
+&lt;input value={value} defaultValue={defaultValue} onChange={(e) =&gt; setValue(e.target.value)} /&gt;</code></pre>
+<p>Input má současně nastaveno <code>value</code> i <code>defaultValue</code>. Co platí?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T16-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Je to chyba – input má být buď řízený, nebo neřízený; React vypíše varování a <code>defaultValue</code> nemá vliv.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Je to doporučený postup – <code>defaultValue</code> se použije při prvním vykreslení, <code>value</code> potom.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>defaultValue</code> přepíše <code>value</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeScript tuto kombinaci nedovolí přeložit.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T16-06 Barva pozadí]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>&lt;input
+  value={value}
+  onChange={(e) =&gt; setValue(e.target.value)}
+  style={{ backgroundColor: value.length &gt; 5 ? &quot;lightgreen&quot; : &quot;lightcoral&quot; }}
+/&gt;</code></pre>
+<p>Kdy bude mít pole pozadí <code>lightgreen</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T16-06</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Když text obsahuje 6 a více znaků.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Když text obsahuje 5 a více znaků.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Jen když text obsahuje přesně 5 znaků.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nikdy – styl se nastaví jen při prvním vykreslení.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T17-01 Obsah ref.current]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Co obsahuje <code>inputRef.current</code> po vykreslení <code>&lt;input ref={inputRef} /&gt;</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T17-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Odkaz na DOM prvek <code>&lt;input&gt;</code> (<code>HTMLInputElement</code>).]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aktuální text v poli.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Kopii props komponenty.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vždy <code>null</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T17-02 useRef a vykreslení]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Vyvolá změna <code>inputRef.current</code> nové vykreslení komponenty?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T17-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Ne – ref uchovává hodnotu mezi vykresleními, ale jeho změna vykreslení nevyvolá.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ano, stejně jako setter <code>useState</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Ano, ale jen v <code>StrictMode</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>inputRef.current</code> nelze měnit.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T17-03 useId ve více instancích]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta obsahuje <code>const id = useId();</code> a na stránce je použita dvakrát. Co platí o hodnotách <code>id</code>?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T17-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Každá instance má jiné id a mezi vykresleními se nemění.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Obě instance mají stejné id, protože jde o stejnou komponentu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Id se mění při každém vykreslení.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Id je prázdné, dokud ho nenastavíme setterem.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T17-04 Pevné id]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Komponenta s <code>&lt;label htmlFor=&quot;input1&quot;&gt;</code> a <code>&lt;input id=&quot;input1&quot; /&gt;</code> (pevné id místo <code>useId</code>) je na stránce dvakrát. Uživatel klikne na popisek druhé instance. Co se stane?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T17-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[Fokus dostane input první instance – na stránce jsou dva prvky se stejným id.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Fokus dostane input druhé instance.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[TypeScript kód s pevným id nepřeloží.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[React id automaticky přejmenuje na unikátní.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T17-05 Pravidla hooků]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Která použití porušují pravidla hooků?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T17-05</idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>if (show) { const [v, setV] = useState(0); }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<code>for (let i = 0; i &lt; 3; i++) { useRef(null); }</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[volání <code>useState</code> uvnitř handleru <code>onClick</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>const id = useId();</code> na začátku těla komponenty]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="-50" format="html">
+      <text><![CDATA[<code>const [a, setA] = useState(6);</code> na začátku těla komponenty]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T17-06 Počítadlo v useRef]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const Clicker = () =&gt; {
+  const clicks = useRef(0);
+  return &lt;button onClick={() =&gt; { clicks.current++; }}&gt;{clicks.current}&lt;/button&gt;;
+};</code></pre>
+<p>Co bude na tlačítku po třech kliknutích?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T17-06</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>0</code> – hodnota v refu se zvýší na 3, ale komponenta se znovu nevykreslí.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>3</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>1</code>]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vznikne chyba – <code>clicks.current</code> nelze měnit.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="category">
+    <category><text>$course$/top/React p3a/K5 Analýza kódu</text></category>
+    <info format="html"><text></text></info>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T18-01 Chybějící povinný prop]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>type ControlledInputProps = {
+  label: string;
+  defaultValue: string;
+  onChange: (value: string) =&gt; void;
+};
+const ControlledInput: FC&lt;ControlledInputProps&gt; = (/* … */) =&gt; { /* … */ };</code></pre>
+<p>Komponenta je použita jako <code>&lt;ControlledInput defaultValue=&quot;Hello&quot; onChange={(v) =&gt; console.log(v)} /&gt;</code>. Co se stane?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T18-01</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[TypeScript ohlásí chybu – chybí povinná vlastnost <code>label</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>label</code> bude automaticky prázdný řetězec a vše je v pořádku.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aplikace spadne při vykreslení.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic, props jsou vždy volitelné.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T18-02 Nepoužitý import]]></text></name>
+    <questiontext format="html"><text><![CDATA[<p>Soubor <code>App.tsx</code> obsahuje <code>import { useState } from 'react'</code>, ale <code>useState</code> se nikde nepoužije. Projekt má v <code>tsconfig.app.json</code> <code>&quot;noUnusedLocals&quot;: true</code>. Co se stane?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T18-02</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>npm run build</code> (<code>tsc -b</code>) skončí chybou kvůli nepoužité proměnné.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic, nepoužité importy TypeScript ignoruje.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Aplikace spadne při spuštění v prohlížeči.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>useState</code> se automaticky zavolá.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T18-03 Kliknutí v UncontrolledInput]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>type Props = { defaultValue?: string; onChange?: (value: string | undefined) =&gt; void };
+
+const UncontrolledInput: FC&lt;Props&gt; = ({ defaultValue, onChange }) =&gt; {
+  const inputRef = useRef&lt;HTMLInputElement&gt;(null);
+  return (
+    &lt;&gt;
+      &lt;input defaultValue={defaultValue} ref={inputRef} /&gt;
+      &lt;button type=&quot;button&quot; onClick={() =&gt; {
+        alert(inputRef.current?.value);
+        onChange?.(inputRef.current?.value);
+      }}&gt;Click me&lt;/button&gt;
+    &lt;/&gt;
+  );
+};</code></pre>
+<p>Komponenta je použita jako <code>&lt;UncontrolledInput defaultValue=&quot;Hello&quot; /&gt;</code> (bez <code>onChange</code>). Uživatel přepíše text na „Ahoj“ a klikne na „Click me“. Co se stane?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T18-03</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>alert</code> zobrazí „Ahoj“; <code>onChange?.(…)</code> se díky <code>?.</code> nezavolá a nevznikne chyba.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>alert</code> zobrazí „Hello“ – výchozí hodnotu.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Vznikne chyba <code>onChange is not a function</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic, neřízený input nelze číst.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T18-04 Najděte chybu]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>function Greeting(props: { name: string }) {
+  return &lt;p class=&quot;greeting&quot;&gt;Ahoj {props.name}&lt;/p&gt;;
+}</code></pre>
+<p>Co je v kódu špatně?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T18-04</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[V JSX se místo <code>class</code> píše <code>className</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Props nelze typovat inline.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>{props.name}</code> musí být v uvozovkách.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Komponenta musí být šipková funkce.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T18-05 Nekonečné vykreslování]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const Counter = () =&gt; {
+  const [n, setN] = useState(0);
+  return &lt;button onClick={setN(n + 1)}&gt;{n}&lt;/button&gt;;
+};</code></pre>
+<p>Co je špatně?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T18-05</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>setN</code> se volá už při vykreslení → nové vykreslení → znovu volání… (nekonečná smyčka). Správně <code>onClick={() =&gt; setN(n + 1)}</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>useState(0)</code> musí mít generikum <code>&lt;number&gt;</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>{n}</code> nelze vypsat do tlačítka.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Nic, kód funguje správně.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+  <question type="multichoice">
+    <name><text><![CDATA[T18-06 Chybný style]]></text></name>
+    <questiontext format="html"><text><![CDATA[<pre><code>const Box = ({ size }: { size: number }) =&gt; {
+  return &lt;div style=&quot;width: {size}px&quot;&gt;Box&lt;/div&gt;;
+};</code></pre>
+<p>Co je špatně?</p>]]></text></questiontext>
+    <generalfeedback format="html"><text></text></generalfeedback>
+    <defaultgrade>1</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber>T18-06</idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html"><text>Správně.</text></correctfeedback>
+    <partiallycorrectfeedback format="html"><text>Částečně správně.</text></partiallycorrectfeedback>
+    <incorrectfeedback format="html"><text>Nesprávně.</text></incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<code>style</code> musí být objekt, např. <code>style={{ width: size }}</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Jednotka <code>px</code> se v Reactu nesmí používat.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<code>size</code> musí být typu <code>string</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[Chybí <code>className</code>.]]></text>
+      <feedback format="html"><text></text></feedback>
+    </answer>
+  </question>
+</quiz>

@@ -1,14 +1,15 @@
 import { useState } from 'react'
-import DrinkList from './components/DrinkList'
+import DrinkListWrapper from './components/DrinkListWrapper'
+import DrinkDetail from './components/DrinkDetail'
 
 import './App.css'
 
 function App() {
-
-
+  const [drinkId, setDrinkId] = useState<string>('');
+  const handleDrinkSelect = (id: string | null) => setDrinkId(id ?? '');
   return (
     <>
-      <DrinkList />
+    {drinkId ? <DrinkDetail id={drinkId} onBack={() => setDrinkId('')} /> : <DrinkListWrapper onDrinkSelect={handleDrinkSelect}   />}
     </>
   )
 }
